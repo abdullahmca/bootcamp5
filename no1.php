@@ -1,0 +1,46 @@
+<?php
+
+/**
+*
+
+*/
+class no1
+{
+   var $hight_school;
+   var $univ;
+}
+class skill{
+  var $skilku;
+}
+
+// membuat object pesan. ini disebut instansiasi
+$jawaban = new no1();
+$jawaban->hight_school="SMK N NUSAWUNGU";
+$jawaban->univ='UNIV BSI';
+
+$skill1=new skill();
+$skill1->skilku="php";
+
+$skill2=new skill();
+$skill2->skilku="java";
+
+
+$skill3=new skill();
+$skill3->skilku="c++";
+
+$myskill = array($skill1, $skill2, $skill3);
+ //memberikan nilai utk properti str pada objek pesan
+
+//$jawaban->hight_school.$jawaban->univ;
+$biodata = array(
+    'name' =>'Slamet'
+    ,'address'=>'cilacap'
+    ,'bobbies'=>'membaca,game,berenang'
+    ,'is_maried'=>'false'
+    ,'school'=>$jawaban
+    , 'skill'=>$myskill
+  );
+echo json_encode($biodata);
+ // mencetak nilainya (pengolahan data)
+
+?>

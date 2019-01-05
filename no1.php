@@ -29,9 +29,9 @@ $skill3=new skill();
 $skill3->skilku="c++";
 
 $myskill = array($skill1, $skill2, $skill3);
- //memberikan nilai utk properti str pada objek pesan
+ 
 
-//$jawaban->hight_school.$jawaban->univ;
+
 $biodata = array(
     'name' =>'Slamet'
     ,'address'=>'cilacap'
@@ -41,6 +41,6 @@ $biodata = array(
     , 'skill'=>$myskill
   );
 echo json_encode($biodata);
- // mencetak nilainya (pengolahan data)
+
 
 ?>

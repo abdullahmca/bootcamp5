@@ -13,7 +13,10 @@ class skill{
   var $skilku;
 }
 
-// membuat object pesan. ini disebut instansiasi
+
+?><br><?php
+class cetak{
+function cetaku(){
 $jawaban = new no1();
 $jawaban->hight_school="SMK N NUSAWUNGU";
 $jawaban->univ='UNIV BSI';
@@ -29,9 +32,6 @@ $skill3=new skill();
 $skill3->skilku="c++";
 
 $myskill = array($skill1, $skill2, $skill3);
- 
-
-
 $biodata = array(
     'name' =>'Slamet'
     ,'address'=>'cilacap'
@@ -40,7 +40,13 @@ $biodata = array(
     ,'school'=>$jawaban
     , 'skill'=>$myskill
   );
-echo json_encode($biodata);
+$cetak=json_encode($biodata);
+echo $cetak;}
 
+}
+
+$cetak=new cetak();
+$cetak->cetaku();
+ // mencetak nilainya (pengolahan data)
 
 ?>
